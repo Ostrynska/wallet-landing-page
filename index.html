@@ -20,27 +20,104 @@
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
-        <header class="">
-            <div class="">
-                <nav class="">
-                    <a href="./index.html" class="" aria-label="Go to homepage">Wallet</a>
-                    <ul class="">
-                        <li class="">
-                            <button class="">Sign up</button>
+        <header class="header">
+            <div class="container">
+                <nav class="header-nav">
+                    <a href="./index.html" class="logo link" aria-label="Go to homepage">Wallet</a>
+                    <button
+                        class="header-menu-open button"
+                        aria-label="Open mobile menu"
+                        aria-expanded="false"
+                    >
+                        <svg class="" width="24" height="24">
+                            <use href="./images/icons.svg#open-icon"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="list header-buttons">
+                        <li>
+                            <a
+                                href="https://animaapp.com/?utm_source=figma-samples&utm_campaign=figma-lp-pets&utm_medium=figma-samples"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="button link button-ghost header-button-ghost"
+                                >Sign up
+                            </a>
                         </li>
-                        <li class="">
-                            <button class="">Log in</button>
+                        <li>
+                            <a
+                                href="https://animaapp.com/?utm_source=figma-samples&utm_campaign=figma-lp-pets&utm_medium=figma-samples"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="button link button-accent header-button-accent"
+                                >Log in
+                            </a>
                         </li>
                     </ul>
                 </nav>
             </div>
+            <div class="header-menu is-hidden">
+                <div class="header-menu-container">
+                    <div class="header-menu-wrapper">
+                        <button
+                            class="header-menu-close button"
+                            aria-label="Close mobile menu"
+                            aria-expanded="false"
+                        >
+                            <svg class="" width="28" height="28">
+                                <use href="./images/icons.svg#close-icon"></use>
+                            </svg>
+                        </button>
+
+                        <nav class="header-menu-nav">
+                            <ul class="list header-menu-links">
+                                <li>
+                                    <a href="#home" class="link header-link active title">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#features" class="link header-link title">Features</a>
+                                </li>
+                                <li>
+                                    <a href="#feedback" class="link header-link title">Feedback</a>
+                                </li>
+                                <li>
+                                    <a href="#cta" class="link header-link title">Get started</a>
+                                </li>
+                                <li>
+                                    <a href="#contacts" class="link header-link title">Contacts</a>
+                                </li>
+                            </ul>
+                            <ul class="list header-menu-buttons">
+                                <li class="">
+                                    <a
+                                        href="https://animaapp.com/?utm_source=figma-samples&utm_campaign=figma-lp-pets&utm_medium=figma-samples"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="button link button-ghost header-button-ghost"
+                                        >Sign up
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="https://animaapp.com/?utm_source=figma-samples&utm_campaign=figma-lp-pets&utm_medium=figma-samples"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="button link button-accent header-button-accent"
+                                        >Log in
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </header>
         <main>
-            <section>
-                <div>
-                    <div>
-                        <h1>SaaS Landing Page Template</h1>
-                        <p>
+            <section class="section section-hero" id="home">
+                <div class="container">
+                    <div class="hero">
+                        <h1 class="headline hero-headline">SaaS Landing Page Template</h1>
+                        <p class="subtitle hero-subtitle">
                             This is a template Figma file, turned into code using Anima. Learn more
                             at AnimaApp.com
                         </p>
@@ -48,55 +125,53 @@
                             href="https://animaapp.com/?utm_source=figma-samples&utm_campaign=figma-lp-pets&utm_medium=figma-samples"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class=""
+                            class="button button-primary link"
                             >Get started
                         </a>
                     </div>
-                    <div>
+                    <div class="hero-image">
                         <img
                             src="./images/hero@1x.png"
                             srcset="./images/hero@1x.png 1x, ./images/hero@2x.png 2x"
                             alt="Dashboard with charts and data overview"
-                            width="500"
-                            height="446"
+                            width="335"
+                            height="299"
                             class=""
                         />
                     </div>
                 </div>
             </section>
 
-            <section>
-                <div>
+            <section class="section section-features" id="features">
+                <div class="container">
                     <h2 hidden class="">Features</h2>
-                    <ul>
-                        <li>
-                            <div>
-                                <svg class="" width="70" height="70">
-                                    <use href="./images/icons.svg#cards-icon"></use>
-                                </svg>
-                            </div>
-                            <h2>Customizable card</h2>
-                            <p>Custom your own card for your exact incomes and expenses needs.</p>
+                    <ul class="list features-list">
+                        <li class="features-item">
+                            <svg class="features-icon" width="70" height="54">
+                                <use href="./images/icons.svg#cards-icon"></use>
+                            </svg>
+                            <h2 class="title features-title">Customizable card</h2>
+                            <p class="subtitle">
+                                Custom your own card for your exact incomes and expenses needs.
+                            </p>
                         </li>
 
-                        <li>
-                            <div>
-                                <svg class="" width="70" height="70">
-                                    <use href="./images/icons.svg#coin-icon"></use>
-                                </svg>
-                            </div>
-                            <h2>No payment fee</h2>
-                            <p>Transfer your payment all over the world with no payment fee.</p>
+                        <li class="features-item">
+                            <svg class="features-icon" width="71" height="70">
+                                <use href="./images/icons.svg#coin-icon"></use>
+                            </svg>
+                            <h2 class="title features-title">No payment fee</h2>
+                            <p class="subtitle">
+                                Transfer your payment all over the world with no payment fee.
+                            </p>
                         </li>
 
-                        <li>
-                            <div>
-                                <svg class="" width="70" height="70">
-                                    <use href="./images/icons.svg#purse-icon"></use>
-                                </svg>
-                            </div>
-                            <h2>All in one place</h2>
-                            <p>
+                        <li class="features-item">
+                            <svg class="features-icon" width="64" height="70">
+                                <use href="./images/icons.svg#purse-icon"></use>
+                            </svg>
+                            <h2 class="title features-title">All in one place</h2>
+                            <p class="subtitle">
                                 The right place to keep your credit and debit cards, boarding passes
                                 &amp; more.
                             </p>
@@ -105,108 +180,138 @@
                 </div>
             </section>
 
-            <section>
-                <div>
+            <section class="section section-feedback" id="feedback">
+                <div class="container">
                     <h2 hidden class="">User Feedback</h2>
-                    <div>
-                        <p>
+                    <div class="feedback">
+                        <p class="feedback-text">
                             “Wallet is a great product! All of my most important information is
                             there - credit cards, transit cards, boarding passes, tickets, and more.
                             And I don't need to worry because it's all in one place! thanks!”
                         </p>
-                    </div>
-                    <div>
-                        <img
-                            src="./images/user-feedback-image@1x.png"
-                            srcset="
-                                ./images/user-feedback-image@1x.png 1x,
-                                ./images/user-feedback-image@2x.png 2x
-                            "
-                            alt="Johnny Owens"
-                            width="80"
-                            height="83"
-                            class=""
-                        />
-                        <p>Johnny Owens</p>
-                        <!-- <div> -->
-                        <ul aria-label="rating: 5 out of 5 stars">
-                            <li>★</li>
-                            <li>★</li>
-                            <li>★</li>
-                            <li>★</li>
-                            <li>★</li>
-                        </ul>
-                        <!-- </div> -->
+
+                        <div class="feedback-user">
+                            <img
+                                src="./images/user-feedback-image@1x.png"
+                                srcset="
+                                    ./images/user-feedback-image@1x.png 1x,
+                                    ./images/user-feedback-image@2x.png 2x
+                                "
+                                alt="Johnny Owens"
+                                width="80"
+                                height="83"
+                                class=""
+                            />
+                            <div>
+                                <p class="subtitle feedback-user-name">Johnny Owens</p>
+                                <ul
+                                    aria-label="rating: 5 out of 5 stars"
+                                    class="list feedback-user-rating"
+                                >
+                                    <li>
+                                        <svg width="20" height="20">
+                                            <use href="./images/icons.svg#user-rating-icon"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg width="20" height="20">
+                                            <use href="./images/icons.svg#user-rating-icon"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg width="20" height="20">
+                                            <use href="./images/icons.svg#user-rating-icon"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg width="20" height="20">
+                                            <use href="./images/icons.svg#user-rating-icon"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg width="20" height="20">
+                                            <use href="./images/icons.svg#user-rating-icon"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section>
-                <div>
+            <section class="section section-cta" id="cta">
+                <div class="container">
                     <div>
-                        <h2>Questions? Let&rsquo;s talk</h2>
-                        <p>
-                            Contact us through our 24/7 live chat. We&rsquo;re always happy to help!
-                        </p>
+                        <h2 class="headline cta-headline">Questions? Let&rsquo;s talk</h2>
+                        <p class="subtitle">Contact us through our 24/7 live chat.</p>
+                        <p class="subtitle cta-subtitle">We&rsquo;re always happy to help!</p>
 
                         <a
                             href="https://animaapp.com/?utm_source=figma-samples&utm_campaign=figma-lp-pets&utm_medium=figma-samples"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class=""
+                            class="link button button-primary"
                             >Get started
                         </a>
                     </div>
 
-                    <div>
+                    <div class="cta-image">
                         <img
                             src="./images/cta@1x.png"
                             srcset="./images/cta@1x.png 1x, ./images/cta@2x.png 2x"
                             alt="Digital wallet with customizable payment cards"
-                            width="500"
-                            height="400"
+                            width="335"
+                            height="268"
                             class=""
                         />
                     </div>
                 </div>
             </section>
         </main>
-        <footer>
-            <div>
+        <footer class="footer" id="contacts">
+            <div class="container">
                 <div>
                     <div>
-                        <a href="/" aria-label="Go to homepage"> Wallet </a>
+                        <a href="/" aria-label="Go to homepage" class="logo link"> Wallet </a>
                     </div>
-
-                    <div>
-                        <p>&copy; Wallet 2022</p>
-                        <nav aria-label="Footer navigation">
-                            <ul>
-                                <li><a href="#">Privacy policy</a></li>
-                                <li><a href="#">Cookies policy</a></li>
-                                <li><a href="#">Terms of use</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div>
-                    <p>Updates right to your Inbox</p>
-                    <form>
-                        <div>
-                            <label hidden for="subscribe-email">Email Address</label>
+                    <div class="footer-form">
+                        <form>
+                            <label for="subscribe-email">Updates right to your Inbox</label>
                             <input
                                 type="email"
                                 placeholder="Email Address"
                                 name="subscribe-email"
-                                class=""
+                                class="footer-input"
                                 required
                                 id="subscribe-email"
                             />
-                            <button type="submit">Send</button>
-                        </div>
-                    </form>
+                            <button type="submit" class="button button-accent footer-button">
+                                Send
+                            </button>
+                        </form>
+                    </div>
+
+                    <div>
+                        <nav aria-label="Footer navigation">
+                            <ul class="list link footer-list">
+                                <li class="footer-item">
+                                    <a href="#" class="link title">Privacy policy</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="link title">Cookies policy</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="link title">Terms of use</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <p class="title"><span class="footer-copyright">&copy;</span>Wallet 2022</p>
+                    </div>
                 </div>
             </div>
         </footer>
     </body>
+
+    <script src="./js/menu.js"></script>
 </html>
