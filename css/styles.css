@@ -422,6 +422,10 @@ body {
 
 .hero-image {
     margin-top: 60px;
+    width: 335px;
+    height: 299px;
+    background-color: var(--color-dark-gray);
+    border-radius: 20px;
 }
 
 @media (min-width: 768px) {
@@ -445,6 +449,10 @@ body {
     .hero-image {
         margin-top: 0;
     }
+    .hero-image {
+        width: 300px;
+        height: 100%;
+    }
     .hero-img {
         width: 300px;
         height: 100%;
@@ -465,6 +473,8 @@ body {
     }
     .hero-image {
         margin-top: 0;
+        width: 500px;
+        height: 446px;
     }
     .hero-img {
         width: 500px;
