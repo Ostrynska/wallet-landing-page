@@ -1,6 +1,6 @@
 # Wallet – SaaS Landing Page
 
-This is a responsive landing page for the Wallet service, built using **pure HTML and CSS**.
+Mobile-first adaptive landing page for the Wallet service, using **HTML and CSS**.
 
 ## 📸 Preview
 
