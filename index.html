@@ -21,7 +21,7 @@
     </head>
     <body>
         <header class="header">
-            <div class="container">
+            <div class="container header-container">
                 <nav class="header-nav">
                     <a href="./index.html" class="logo link" aria-label="Go to homepage">Wallet</a>
                     <button
@@ -116,28 +116,31 @@
             <section class="section section-hero" id="home">
                 <div class="container">
                     <div class="hero">
-                        <h1 class="headline hero-headline">SaaS Landing Page Template</h1>
-                        <p class="subtitle hero-subtitle">
-                            This is a template Figma file, turned into code using Anima. Learn more
-                            at AnimaApp.com
-                        </p>
-                        <a
-                            href="https://animaapp.com/?utm_source=figma-samples&utm_campaign=figma-lp-pets&utm_medium=figma-samples"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="button button-primary link"
-                            >Get started
-                        </a>
-                    </div>
-                    <div class="hero-image">
-                        <img
-                            src="./images/hero@1x.png"
-                            srcset="./images/hero@1x.png 1x, ./images/hero@2x.png 2x"
-                            alt="Dashboard with charts and data overview"
-                            width="335"
-                            height="299"
-                            class=""
-                        />
+                        <div>
+                            <h1 class="headline hero-headline">SaaS Landing Page Template</h1>
+                            <p class="subtitle hero-subtitle">
+                                This is a template Figma file, turned into code using Anima. Learn
+                                more at AnimaApp.com
+                            </p>
+                            <a
+                                href="https://animaapp.com/?utm_source=figma-samples&utm_campaign=figma-lp-pets&utm_medium=figma-samples"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="button button-primary link"
+                                >Get started
+                            </a>
+                        </div>
+
+                        <div class="hero-image">
+                            <img
+                                src="./images/hero@1x.png"
+                                srcset="./images/hero@1x.png 1x, ./images/hero@2x.png 2x"
+                                alt="Dashboard with charts and data overview"
+                                width="335"
+                                height="299"
+                                class="hero-img"
+                            />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -147,9 +150,12 @@
                     <h2 hidden class="">Features</h2>
                     <ul class="list features-list">
                         <li class="features-item">
-                            <svg class="features-icon" width="70" height="54">
-                                <use href="./images/icons.svg#cards-icon"></use>
-                            </svg>
+                            <div class="features-icon">
+                                <svg width="70" height="70">
+                                    <use href="./images/icons.svg#cards-icon" class=""></use>
+                                </svg>
+                            </div>
+
                             <h2 class="title features-title">Customizable card</h2>
                             <p class="subtitle">
                                 Custom your own card for your exact incomes and expenses needs.
@@ -157,9 +163,11 @@
                         </li>
 
                         <li class="features-item">
-                            <svg class="features-icon" width="71" height="70">
-                                <use href="./images/icons.svg#coin-icon"></use>
-                            </svg>
+                            <div class="features-icon">
+                                <svg width="70" height="70">
+                                    <use href="./images/icons.svg#coin-icon"></use>
+                                </svg>
+                            </div>
                             <h2 class="title features-title">No payment fee</h2>
                             <p class="subtitle">
                                 Transfer your payment all over the world with no payment fee.
@@ -167,9 +175,12 @@
                         </li>
 
                         <li class="features-item">
-                            <svg class="features-icon" width="64" height="70">
-                                <use href="./images/icons.svg#purse-icon"></use>
-                            </svg>
+                            <div class="features-icon">
+                                <svg width="70" height="70">
+                                    <use href="./images/icons.svg#purse-icon"></use>
+                                </svg>
+                            </div>
+
                             <h2 class="title features-title">All in one place</h2>
                             <p class="subtitle">
                                 The right place to keep your credit and debit cards, boarding passes
@@ -242,76 +253,82 @@
 
             <section class="section section-cta" id="cta">
                 <div class="container">
-                    <div>
-                        <h2 class="headline cta-headline">Questions? Let&rsquo;s talk</h2>
-                        <p class="subtitle">Contact us through our 24/7 live chat.</p>
-                        <p class="subtitle cta-subtitle">We&rsquo;re always happy to help!</p>
+                    <div class="cta">
+                        <div>
+                            <h2 class="headline cta-headline">Questions? Let&rsquo;s talk</h2>
+                            <p class="subtitle">Contact us through our 24/7 live chat.</p>
+                            <p class="subtitle cta-subtitle">We&rsquo;re always happy to help!</p>
 
-                        <a
-                            href="https://animaapp.com/?utm_source=figma-samples&utm_campaign=figma-lp-pets&utm_medium=figma-samples"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="link button button-primary"
-                            >Get started
-                        </a>
-                    </div>
+                            <a
+                                href="https://animaapp.com/?utm_source=figma-samples&utm_campaign=figma-lp-pets&utm_medium=figma-samples"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="link button button-primary"
+                                >Get started
+                            </a>
+                        </div>
 
-                    <div class="cta-image">
-                        <img
-                            src="./images/cta@1x.png"
-                            srcset="./images/cta@1x.png 1x, ./images/cta@2x.png 2x"
-                            alt="Digital wallet with customizable payment cards"
-                            width="335"
-                            height="268"
-                            class=""
-                        />
+                        <div class="cta-image">
+                            <img
+                                src="./images/cta@1x.png"
+                                srcset="./images/cta@1x.png 1x, ./images/cta@2x.png 2x"
+                                alt="Digital wallet with customizable payment cards"
+                                width="335"
+                                height="268"
+                                class=""
+                            />
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer class="footer" id="contacts">
-            <div class="container">
-                <div>
-                    <div>
-                        <a href="/" aria-label="Go to homepage" class="logo link"> Wallet </a>
+        <footer id="contacts">
+            <div class="container footer-container">
+                <div class="footer-wrapper">
+                    <div class="footer-wrap">
+                        <div class="footer-logo">
+                            <a href="/" class="logo link">Wallet</a>
+                        </div>
+
+                        <div class="footer-info">
+                            <p class="title footer-copyright"><span>©</span>Wallet 2022</p>
+                            <ul class="list link footer-list">
+                                <li class="footer-item">
+                                    <a href="#" class="link title footer-link">Privacy policy</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="link title footer-link">Cookies policy</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="link title footer-link">Terms of use</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="footer-form">
                         <form>
                             <label for="subscribe-email">Updates right to your Inbox</label>
-                            <input
-                                type="email"
-                                placeholder="Email Address"
-                                name="subscribe-email"
-                                class="footer-input"
-                                required
-                                id="subscribe-email"
-                            />
-                            <button type="submit" class="button button-accent footer-button">
-                                Send
-                            </button>
+                            <div class="footer-form-action">
+                                <input
+                                    type="email"
+                                    placeholder="Email Address"
+                                    name="subscribe-email"
+                                    class="footer-input"
+                                    required
+                                    id="subscribe-email"
+                                />
+                                <button type="submit" class="button button-accent footer-button">
+                                    Send
+                                </button>
+                            </div>
                         </form>
                     </div>
-
-                    <div>
-                        <nav aria-label="Footer navigation">
-                            <ul class="list link footer-list">
-                                <li class="footer-item">
-                                    <a href="#" class="link title">Privacy policy</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="#" class="link title">Cookies policy</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="#" class="link title">Terms of use</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <p class="title"><span class="footer-copyright">&copy;</span>Wallet 2022</p>
+                    <div class="footer-logo-mob">
+                        <a href="/" class="logo link">Wallet</a>
                     </div>
                 </div>
             </div>
         </footer>
+        <script src="./js/menu.js"></script>
     </body>
-
-    <script src="./js/menu.js"></script>
 </html>
