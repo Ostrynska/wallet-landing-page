@@ -2,11 +2,11 @@
 
 Mobile-first adaptive landing page for the Wallet service, using **HTML and CSS**.
 
-## 📸 Preview
+## Preview
 
-🔗 **Live Demo**: [Click here to view](https://your-username.github.io/wallet-landing-page)
+**Live Demo**: [Click here to view](https://your-username.github.io/wallet-landing-page)
 
-## 🔧 Technologies
+## Technologies
 
 - HTML5 (semantic markup)
 - CSS3 with:
@@ -16,7 +16,7 @@ Mobile-first adaptive landing page for the Wallet service, using **HTML and CSS*
   - Media queries for responsiveness
 - No external libraries, frameworks, or preprocessors used
 
-## 🎨 Features
+## Features
 
 - **Pixel-perfect** layout (as close to the design as possible)
 - **Responsive design**: supports mobile, tablet, and desktop screens
@@ -26,13 +26,13 @@ Mobile-first adaptive landing page for the Wallet service, using **HTML and CSS*
 - **Script added for inline import of SVG symbols with gradients** to ensure proper rendering in Safari and other browsers
 - Icons are implemented using a **handcrafted SVG sprite**
 
-## ♿ Accessibility
+## Accessibility
 
 - Keyboard navigation support
 - `aria-*` attributes for enhanced accessibility
 - Visually hidden headings (`.visually-hidden`) for screen readers
 
-## 📦 Structure
+## Structure
 
 ```
 📁 wallet-landing-page/
@@ -48,16 +48,7 @@ Mobile-first adaptive landing page for the Wallet service, using **HTML and CSS*
 │   └── sprite.js              # Script to ensure SVG with gradients render in Safari
 ```
 
-## 🚀 Deployment
+## Deployment
 
 The project is deployed via **GitHub Pages** and available at:
 👉 [https://Ostrynska.github.io/wallet-landing-page](https://Ostrynska.github.io/wallet-landing-page)
-
-## 🧩 Instructions
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Ostrynska/wallet-landing-page.git
-   
-2. Open index.html in your browser.
-
