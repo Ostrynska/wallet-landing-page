@@ -3,6 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Modern SaaS landing page template created with accessibility and responsiveness in mind. Built using clean HTML/CSS."
+        />
         <title>Wallet</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +26,7 @@
     <body>
         <header class="header">
             <div class="container header-container">
-                <nav class="header-nav">
+                <nav class="header-nav" aria-label="Desktop Navigation">
                     <a href="./index.html" class="logo link" aria-label="Go to homepage">Wallet</a>
                     <button
                         class="header-menu-open button"
@@ -69,10 +73,15 @@
                             </svg>
                         </button>
 
-                        <nav class="header-menu-nav">
+                        <nav class="header-menu-nav" aria-label="Mobile Navigation">
                             <ul class="list header-menu-links">
                                 <li>
-                                    <a href="#home" class="link header-link active title">Home</a>
+                                    <a
+                                        href="#home"
+                                        aria-current="page"
+                                        class="link header-link active title"
+                                        >Home</a
+                                    >
                                 </li>
                                 <li>
                                     <a href="#features" class="link header-link title">Features</a>
@@ -88,7 +97,7 @@
                                 </li>
                             </ul>
                             <ul class="list header-menu-buttons">
-                                <li class="">
+                                <li>
                                     <a
                                         href="https://animaapp.com/?utm_source=figma-samples&utm_campaign=figma-lp-pets&utm_medium=figma-samples"
                                         target="_blank"
@@ -97,7 +106,7 @@
                                         >Sign up
                                     </a>
                                 </li>
-                                <li class="">
+                                <li>
                                     <a
                                         href="https://animaapp.com/?utm_source=figma-samples&utm_campaign=figma-lp-pets&utm_medium=figma-samples"
                                         target="_blank"
@@ -147,16 +156,16 @@
 
             <section class="section section-features" id="features">
                 <div class="container">
-                    <h2 hidden class="">Features</h2>
+                    <h2 class="visually-hidden">Features</h2>
                     <ul class="list features-list">
                         <li class="features-item">
                             <div class="features-icon">
                                 <svg width="70" height="70">
-                                    <use href="./images/icons.svg#cards-icon" class=""></use>
+                                    <use href="./images/icons.svg#cards-icon"></use>
                                 </svg>
                             </div>
 
-                            <h2 class="title features-title">Customizable card</h2>
+                            <h3 class="title features-title">Customizable card</h3>
                             <p class="subtitle">
                                 Custom your own card for your exact incomes and expenses needs.
                             </p>
@@ -164,11 +173,11 @@
 
                         <li class="features-item">
                             <div class="features-icon">
-                                <svg width="70" height="70">
+                                <svg width="70" height="70" aria-hidden="true">
                                     <use href="./images/icons.svg#coin-icon"></use>
                                 </svg>
                             </div>
-                            <h2 class="title features-title">No payment fee</h2>
+                            <h3 class="title features-title">No payment fee</h3>
                             <p class="subtitle">
                                 Transfer your payment all over the world with no payment fee.
                             </p>
@@ -181,7 +190,7 @@
                                 </svg>
                             </div>
 
-                            <h2 class="title features-title">All in one place</h2>
+                            <h3 class="title features-title">All in one place</h3>
                             <p class="subtitle">
                                 The right place to keep your credit and debit cards, boarding passes
                                 &amp; more.
@@ -193,7 +202,7 @@
 
             <section class="section section-feedback" id="feedback">
                 <div class="container">
-                    <h2 hidden class="">User Feedback</h2>
+                    <h2 class="visually-hidden">User Feedback</h2>
                     <div class="feedback">
                         <p class="feedback-text">
                             “Wallet is a great product! All of my most important information is
@@ -211,7 +220,6 @@
                                 alt="Johnny Owens"
                                 width="80"
                                 height="83"
-                                class=""
                             />
                             <div>
                                 <p class="subtitle feedback-user-name">Johnny Owens</p>
@@ -292,17 +300,25 @@
 
                         <div class="footer-info">
                             <p class="title footer-copyright"><span>©</span>Wallet 2022</p>
-                            <ul class="list link footer-list">
-                                <li class="footer-item">
-                                    <a href="#" class="link title footer-link">Privacy policy</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="#" class="link title footer-link">Cookies policy</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="#" class="link title footer-link">Terms of use</a>
-                                </li>
-                            </ul>
+                            <nav aria-label="Footer Navigation">
+                                <ul class="list link footer-list">
+                                    <li class="footer-item">
+                                        <a href="#home" class="link title footer-link"
+                                            >Privacy policy</a
+                                        >
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="#home" class="link title footer-link"
+                                            >Cookies policy</a
+                                        >
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="#home" class="link title footer-link"
+                                            >Terms of use</a
+                                        >
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                     <div class="footer-form">
@@ -329,6 +345,6 @@
                 </div>
             </div>
         </footer>
-        <script src="./js/menu.js"></script>
+        <script src="./js/menu.js" defer></script>
     </body>
 </html>
