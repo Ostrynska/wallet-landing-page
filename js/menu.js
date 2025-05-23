@@ -12,13 +12,13 @@ openBtn.addEventListener('click', () => {
 
 closeBtn.addEventListener('click', () => {
     menu.classList.remove('active');
+    menu.classList.add('closing');
     body.classList.remove('no-scroll');
     openBtn.setAttribute('aria-expanded', 'false');
+    setTimeout(() => {
+        menu.classList.remove('closing');
+    }, 800);
 });
-
-setTimeout(() => {
-    menu.classList.remove('closing');
-}, 800);
 
 links.forEach(link => {
     link.addEventListener('click', () => {
