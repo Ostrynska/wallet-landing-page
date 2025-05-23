@@ -448,6 +448,19 @@ body {
     height: 299px;
     background-color: var(--color-dark-gray);
     border-radius: 20px;
+    animation: pulse-scale 2s ease-in-out infinite;
+}
+
+@keyframes pulse-scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.01);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 @media (min-width: 768px) {
@@ -522,7 +535,7 @@ body {
     opacity: 0;
     transform: translateY(40px);
     animation: fadeUp 1s ease-out forwards;
-    animation-delay: calc(var(--order) * 0.2s);
+    animation-delay: calc(var(--order) * 0.8s);
 }
 
 .features-title {
