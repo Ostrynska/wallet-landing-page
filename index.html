@@ -26,8 +26,33 @@
     <body>
         <header class="header">
             <div class="container header-container">
-                <nav class="header-nav" aria-label="Menu Navigation">
-                    <a href="./index.html" class="logo link" aria-label="Go to homepage">Wallet</a>
+                <div class="header-wrapper">
+                    <nav class="header-nav" aria-label="Menu Navigation">
+                        <a href="./index.html" class="logo link" aria-label="Go to homepage"
+                            >Wallet</a
+                        >
+
+                        <ul class="list header-buttons">
+                            <li>
+                                <a
+                                    href="https://animaapp.com/?utm_source=figma-samples&utm_campaign=figma-lp-pets&utm_medium=figma-samples"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="button link button-ghost header-button-ghost"
+                                    >Sign up
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://animaapp.com/?utm_source=figma-samples&utm_campaign=figma-lp-pets&utm_medium=figma-samples"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="button link button-accent header-button-accent"
+                                    >Log in
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                     <button
                         class="header-menu-open button"
                         aria-label="Open mobile menu"
@@ -38,28 +63,7 @@
                             <use href="./images/icons.svg#open-icon"></use>
                         </svg>
                     </button>
-
-                    <ul class="list header-buttons">
-                        <li>
-                            <a
-                                href="https://animaapp.com/?utm_source=figma-samples&utm_campaign=figma-lp-pets&utm_medium=figma-samples"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="button link button-ghost header-button-ghost"
-                                >Sign up
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://animaapp.com/?utm_source=figma-samples&utm_campaign=figma-lp-pets&utm_medium=figma-samples"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="button link button-accent header-button-accent"
-                                >Log in
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                </div>
             </div>
             <div class="header-menu is-hidden">
                 <div class="header-menu-container">
@@ -163,10 +167,10 @@
                     <ul class="list features-list">
                         <li class="features-item">
                             <div class="features-icon">
-                                <svg width="70" height="70">
+                                <svg width="70" height="70" aria-hidden="true">
                                     <use
                                         href="./images/icons.svg#cards-icon"
-                                        aria-gradient="true"
+                                        data-gradient="true"
                                     ></use>
                                 </svg>
                             </div>
@@ -179,10 +183,10 @@
 
                         <li class="features-item">
                             <div class="features-icon">
-                                <svg width="70" height="70">
+                                <svg width="70" height="70" aria-hidden="true">
                                     <use
                                         href="./images/icons.svg#coin-icon"
-                                        aria-gradient="true"
+                                        data-gradient="true"
                                     ></use>
                                 </svg>
                             </div>
@@ -194,10 +198,10 @@
 
                         <li class="features-item">
                             <div class="features-icon">
-                                <svg width="70" height="70">
+                                <svg width="70" height="70" aria-hidden="true">
                                     <use
                                         href="/images/icons.svg#purse-icon"
-                                        aria-gradient="true"
+                                        data-gradient="true"
                                     ></use>
                                 </svg>
                             </div>
@@ -240,27 +244,52 @@
                                     class="list feedback-user-rating"
                                 >
                                     <li>
-                                        <svg width="20" height="20">
+                                        <svg
+                                            width="20"
+                                            height="20"
+                                            aria-hidden="true"
+                                            focusable="false"
+                                        >
                                             <use href="./images/icons.svg#user-rating-icon"></use>
                                         </svg>
                                     </li>
                                     <li>
-                                        <svg width="20" height="20">
+                                        <svg
+                                            width="20"
+                                            height="20"
+                                            aria-hidden="true"
+                                            focusable="false"
+                                        >
                                             <use href="./images/icons.svg#user-rating-icon"></use>
                                         </svg>
                                     </li>
                                     <li>
-                                        <svg width="20" height="20">
+                                        <svg
+                                            width="20"
+                                            height="20"
+                                            aria-hidden="true"
+                                            focusable="false"
+                                        >
                                             <use href="./images/icons.svg#user-rating-icon"></use>
                                         </svg>
                                     </li>
                                     <li>
-                                        <svg width="20" height="20">
+                                        <svg
+                                            width="20"
+                                            height="20"
+                                            aria-hidden="true"
+                                            focusable="false"
+                                        >
                                             <use href="./images/icons.svg#user-rating-icon"></use>
                                         </svg>
                                     </li>
                                     <li>
-                                        <svg width="20" height="20">
+                                        <svg
+                                            width="20"
+                                            height="20"
+                                            aria-hidden="true"
+                                            focusable="false"
+                                        >
                                             <use href="./images/icons.svg#user-rating-icon"></use>
                                         </svg>
                                     </li>
@@ -308,7 +337,7 @@
                 <div class="footer-wrapper">
                     <div class="footer-wrap">
                         <div class="footer-logo">
-                            <a href="/" class="logo link">Wallet</a>
+                            <a href="/" class="logo link" aria-label="Go to homepage">Wallet</a>
                         </div>
 
                         <div class="footer-info">
@@ -353,7 +382,7 @@
                         </form>
                     </div>
                     <div class="footer-logo-mob">
-                        <a href="/" class="logo link">Wallet</a>
+                        <a href="/" class="logo link" aria-label="Go to homepage">Wallet</a>
                     </div>
                 </div>
             </div>
