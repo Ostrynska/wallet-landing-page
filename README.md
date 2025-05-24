@@ -6,7 +6,7 @@ Mobile-first adaptive landing page for the Wallet service, using **HTML and CSS*
 
 ## Preview
 
-**Live Demo**: [Click here to view](https://your-username.github.io/wallet-landing-page)
+![screen-recording-2025-05-24-at-111644-online-video-cuttercom_rQYmLbOz](https://github.com/user-attachments/assets/211e78b5-1830-4c98-86b1-dbf64fa3e00f)
 
 ## Technologies
 
