@@ -4,7 +4,7 @@ function inlineExternalUse() {
     const extSvgs = document.querySelectorAll('use');
 
     extSvgs.forEach(useEl => {
-        if (!useEl.hasAttribute('aria-gradient')) return;
+        if (!useEl.hasAttribute('data-gradient')) return;
 
         const href = useEl.getAttribute('href') || useEl.getAttribute('xlink:href');
         if (!href || !href.includes('#')) return;
