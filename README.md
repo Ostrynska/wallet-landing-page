@@ -27,6 +27,8 @@ Mobile-first adaptive landing page for the Wallet service, using **HTML and CSS*
 - **Additional animation added** to some elements
 - **Script added for inline import of SVG symbols with gradients** to ensure proper rendering in Safari and other browsers
 - Icons are implemented using a **handcrafted SVG sprite**
+- **Sticky Header:** On mobile devices, the header remains fixed at the top of the screen while scrolling, providing quick access to navigation.
+- **Anchor Navigation:** Tapping a menu item in the mobile navigation smoothly scrolls the page to the corresponding section using anchor links.
 
 ## Accessibility
 
