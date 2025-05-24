@@ -249,13 +249,6 @@ body {
     }
 }
 
-@media (min-width: 1280px) {
-    .container {
-        width: 1280px;
-        padding: 0 100px;
-    }
-}
-
 /* --- HEADER --- */
 .header {
     position: sticky;
