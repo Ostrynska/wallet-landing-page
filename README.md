@@ -30,7 +30,6 @@ Mobile-first adaptive landing page for the Wallet service, using **HTML and CSS*
 
 ## Accessibility
 
-- Keyboard navigation support
 - `aria-*` attributes for enhanced accessibility
 - Visually hidden headings (`.visually-hidden`) for screen readers
 
